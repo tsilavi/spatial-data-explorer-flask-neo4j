@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+
+    
+
+
+<head>
+	<link rel="stylesheet" href="../static/mystyleresult.css" />
+</head>
+<body>
+
+
+          <div>
+            <h1>               Search results...             </h1>
+          </div>
+        
+	  <table>
+		<tr>
+			<th>No.</th>
+			<th>Source of dataset</th>
+			<th>Dataset title</th>
+			<th>ID in KNTU repository</th>
+		</tr>
+		
+		{% for i in range(0, length) %}
+				<tr>
+					<td>  {{i}} </td>
+					<td  align="right" dir="rtl"> {{ df[i].dssource }} </td>
+					<td  align="right" dir="rtl"> {{ df[i].dstitle}} </td>
+					<td  style="color: rgb(228, 42, 42); font-size: 20px" align="center" dir="ltr"> {{ df[i].identifier}} </td>
+				</tr>
+			
+		{% endfor %}
+	  </table>
+</body>
+</html>
+

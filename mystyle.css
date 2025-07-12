@@ -1,0 +1,15 @@
+@font-face{
+font-family: trial;
+src: url('myfont.otf');
+font-weight: bold;}
+
+body {
+  background-image: url("//www.jotform.com/images/brushed.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center top;
+     }
+td {font-family:trial; color: pink}
+
+
+

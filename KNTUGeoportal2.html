@@ -1,0 +1,1756 @@
+
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	
+
+	<!-- <link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://en.kntu.ac.ir/xmlrpc.php"> -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="   crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+	<title>KNTU Geoportal &#8211; K. N. Toosi University of Technology</title>
+	<script>
+	( function() {
+		var query = document.location.search;
+
+		if ( query && query.indexOf( 'preview=true' ) !== -1 ) {
+			window.name = 'wp-preview-16095';
+		}
+
+		if ( window.addEventListener ) {
+			window.addEventListener( 'unload', function() { window.name = ''; }, false );
+		}
+	}());
+	</script>
+	<link rel="alternate" type="application/rss+xml" title="K. N. Toosi University of Technology &raquo; Feed" href="https://en.kntu.ac.ir/feed/" />
+<link rel="alternate" type="application/rss+xml" title="K. N. Toosi University of Technology &raquo; Comments Feed" href="https://en.kntu.ac.ir/comments/feed/" />
+<link rel='stylesheet' id='dashicons-css'  href='https://en.kntu.ac.ir/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://en.kntu.ac.ir/wp-includes/css/admin-bar.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='la-icon-maneger-style-css'  href='https://en.kntu.ac.ir/wp-content/uploads/la_icon_sets/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://en.kntu.ac.ir/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://en.kntu.ac.ir/wp-includes/css/dist/block-library/theme.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://en.kntu.ac.ir/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://en.kntu.ac.ir/wp-content/plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'></style>
+<link rel='stylesheet' id='sf_styles-css'  href='https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/css/public.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bodhi-svgs-attachment-css'  href='https://en.kntu.ac.ir/wp-content/plugins/svg-support/css/svgs-attachment.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-columnfilterwidgets-css-css'  href='https://en.kntu.ac.ir/wp-content/plugins/tablepress-datatables-column-filter-widgets/css/ColumnFilterWidgets.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='duplicate-post-css'  href='https://en.kntu.ac.ir/wp-content/plugins/duplicate-post/duplicate-post.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-responsive-tables-css'  href='https://en.kntu.ac.ir/wp-content/plugins/tablepress-responsive-tables/css/responsive.dataTables.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://en.kntu.ac.ir/wp-content/plugins/tablepress/css/default.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://en.kntu.ac.ir/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cf7cf-style-css'  href='https://en.kntu.ac.ir/wp-content/plugins/cf7-conditional-fields/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tmmp-css'  href='https://en.kntu.ac.ir/wp-content/plugins/team-members-pro/inc/css/tmm_style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bsf-Defaults-css'  href='https://en.kntu.ac.ir/wp-content/uploads/smile_fonts/Defaults/Defaults.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ultimate-style-min-css'  href='https://en.kntu.ac.ir/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/ultimate.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://en.kntu.ac.ir/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css'  href='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/css/ionicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-pe-icon-7-css'  href='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/css/font-pe-icon-7.css' type='text/css' media='all' />
+<link rel='stylesheet' id='flaticon-css'  href='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/css/flaticon.css' type='text/css' media='all' />
+<link rel='stylesheet' id='thim-custom-vc-css'  href='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/css/custom-vc.css' type='text/css' media='all' />
+<link rel='stylesheet' id='thim-style-css'  href='https://en.kntu.ac.ir/wp-content/themes/eduma/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='thim-style-options-css'  href='//en.kntu.ac.ir/wp-content/uploads/tc_stylesheets/eduma.1586341372.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-responsive-tables-flip-css'  href='https://en.kntu.ac.ir/wp-content/plugins/tablepress-responsive-tables/css/tablepress-responsive-flip.min.css?ver=1.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/includes/vendor/looks_awesome/icon_manager/js/md5.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/includes/vendor/looks_awesome/icon_manager/js/util.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/js/public.min.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/team-members-pro/inc/js/tmm.min.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js'></script>
+<link rel='https://api.w.org/' href='https://en.kntu.ac.ir/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://en.kntu.ac.ir/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://en.kntu.ac.ir/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://en.kntu.ac.ir/?p=16095' />
+<link rel="alternate" type="application/json+oembed" href="https://en.kntu.ac.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fen.kntu.ac.ir%2F%3Fpage_id%3D16095" />
+<link rel="alternate" type="text/xml+oembed" href="https://en.kntu.ac.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fen.kntu.ac.ir%2F%3Fpage_id%3D16095&#038;format=xml" />
+<script>
+    var SFM_is_mobile = (function () {
+        var n = navigator.userAgent;
+        var reg = new RegExp('Android\s([0-9\.]*)')
+        var match = n.toLowerCase().match(reg);
+        var android =  match ? parseFloat(match[1]) : false;
+        if (android && android < 3.6) return
+
+        return n.match(/Android|BlackBerry|IEMobile|iPhone|iPad|iPod|Opera Mini/i)
+    })();
+
+	var SFM_skew_disabled = (function($){
+		var window_width = $(window).width();
+		var sfm_width = 300;
+		if(sfm_width * 2 >= window_width){
+			return true;
+		}
+		return false;
+	})(jQuery);
+
+    (function(){
+        var mob_bar = '';
+        var pos = 'right';
+        var iconbar = '';
+        var classes = SFM_is_mobile ? (mob_bar ? 'sfm-mobile sfm-mob-nav' : 'sfm-mobile'): 'sfm-no-mobile';
+        classes += ' sfm-pos-' + pos;
+        classes += iconbar ? ' sfm-bar' : '';
+		classes += SFM_skew_disabled ? ' sfm-skew-disabled' : '';
+		window.SFM_classes = classes;
+        document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className + ' ' + classes;
+    })();
+</script>
+<style id="superfly-dynamic-styles">
+	@font-face {
+		font-family: 'sfm-icomoon';
+		src:url('https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/img/fonts/icomoon.eot?wehgh4');
+		src: url('https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/img/fonts/icomoon.svg?wehgh4#icomoon') format('svg'),
+		url('https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/img/fonts/icomoon.eot?#iefixwehgh4') format('embedded-opentype'),
+		url('https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/img/fonts/icomoon.woff?wehgh4') format('woff'),
+		url('https://en.kntu.ac.ir/wp-content/plugins/superfly-menu/img/fonts/icomoon.ttf?wehgh4') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+		
+</style>
+<script>
+
+    ;(function (){
+        var insertListener = function(event){
+            if (event.animationName == "bodyArrived") {
+                afterContentArrived();
+            }
+        }
+        var timer, _timer;
+        var transition = '';
+
+        if (document.addEventListener && false) {
+            document.addEventListener("animationstart", insertListener, false); // standard + firefox
+            document.addEventListener("MSAnimationStart", insertListener, false); // IE
+            document.addEventListener("webkitAnimationStart", insertListener, false); // Chrome + Safari
+        } else {
+            timer = setInterval(function(){
+                if (document.body) { //
+                    clearInterval(timer);
+                    afterContentArrived();
+                }
+            },14);
+        }
+
+        function afterContentArrived() {
+            clearTimeout(_timer);
+            var htmlClss;
+
+            if (window.jQuery) {
+                htmlClss = document.getElementsByTagName('html')[0].className;
+                if (htmlClss.indexOf('sfm-pos') === -1) {
+                    document.getElementsByTagName('html')[0].className = htmlClss + ' ' + window.SFM_classes;
+                }
+                jQuery('body').fadeIn();
+                jQuery(document).trigger('sfm_doc_body_arrived');
+                window.SFM_EVENT_DISPATCHED = true;
+            } else {
+                _timer = setTimeout(function(){
+                    afterContentArrived();
+                },14);
+            }
+        }
+    })()
+</script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+    button[type="submit"] {
+    background-color: rgb(4, 18, 99);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+button[type="reset"] {
+  background-color: rgb(4, 18, 99);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	
+<link rel="icon" href="https://en.kntu.ac.ir/wp-content/uploads/picture/cropped-kntu_icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://en.kntu.ac.ir/wp-content/uploads/picture/cropped-kntu_icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://en.kntu.ac.ir/wp-content/uploads/picture/cropped-kntu_icon-180x180.png" />
+
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<script type="text/javascript">
+            if (typeof ajaxurl === 'undefined') {
+                /* <![CDATA[ */
+                var ajaxurl = "https://en.kntu.ac.ir/wp-admin/admin-ajax.php";
+                /* ]]> */
+            }
+		</script>
+		<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="page-template page-template-page-templates page-template-blank-page page-template-page-templatesblank-page-php page page-id-16095 page-child parent-pageid-7898 logged-in admin-bar no-customize-support locale-en-us group-blog thim-body-load-overlay bg-boxed-image thim-popup-feature wpb-js-composer js-comp-ver-5.6.1 vc_responsive" id="thim-body">
+
+	<div id="main-home-content" class="blank-content blank-page container" role="main">
+		<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="563" height="397" src="https://en.kntu.ac.ir/wp-content/uploads/Geomatics/Geoportal/Geomatics_logo_dark_removedBG.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h1 style="text-align: center;"><span style="color: #ffcc99;">KNTU Data Repository</span></h1>
+<p style="text-align: center;"><span style="color: #ffcc99;">Spatial Data Explorer</span></p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(https://en.kntu.ac.ir/wp-content/uploads/Geomatics/Geoportal/persian-gulf.jpg)" data-image-id="id^16113|url^https://en.kntu.ac.ir/wp-content/uploads/Geomatics/Geoportal/persian-gulf.jpg|caption^null|alt^null|title^persian-gulf.jpg|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="5.6.1"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="flip-box-wrap" style=""><div class="flip-box ifb-jq-height  vertical_flip_top flip-ifb-jq-height"  style="" ><div class="ifb-flip-box" id="flip-box-wrap-8720"><div class="ifb-face ifb-front " style="color:#7c1c36;color:#7c1c36;background:#bb9f9f; border-width: 2px;border-style: solid; border-color:#ffffff; border-radius: px;">
+							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
+							<div class="flip-box-icon"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
+</div></div></div><h3 class="ult-responsive flipbox_heading"  data-ultimate-target='#flip-box-wrap-8720 .ult-responsive.flipbox_heading'  data-responsive-json-new='{"font-size":"","line-height":""}'  style="color:#7c1c36; ">User Guide</h3></div></div><!-- END .front -->
+						<div class="ifb-face ifb-back" style="color:#7c1c36;color:#7c1c36;background:#d6aaaa; border-width: 2px;border-style: solid; border-color:#ffffff; border-radius: px;">
+							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle"><div class="ifb-flip-box-section-content ult-responsive"  data-ultimate-target='#flip-box-wrap-8720 .ifb-flip-box-section-content.ult-responsive'  data-responsive-json-new='{"font-size":"","line-height":""}'  style="color:#333333;color:#7c1c36;color:#7c1c36;"><p>The KNTU geoportal is an entry point to search the data that are collected beforehand in the faculty of geomatics. </p></div></div></div><!-- END .back --></div> <!-- ifb-flip-box --></div> <!-- flip-box --></div><!-- End icon block --></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="flip-box-wrap" style=""><div class="flip-box ifb-jq-height  vertical_flip_top flip-ifb-jq-height"  style="" ><div class="ifb-flip-box" id="flip-box-wrap-8315"><div class="ifb-face ifb-front " style="color:#7c1c36;color:#7c1c36;background:#bb9f9f; border-width: 2px;border-style: solid; border-color:#ffffff; border-radius: px;">
+							<div class="ifb-flip-box-section ">
+							<div class="flip-box-icon"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
+</div></div></div><h3 class="ult-responsive flipbox_heading"  data-ultimate-target='#flip-box-wrap-8315 .ult-responsive.flipbox_heading'  data-responsive-json-new='{"font-size":"","line-height":""}'  style="color:#7c1c36; ">Contact Us</h3></div></div><!-- END .front -->
+						<div class="ifb-face ifb-back" style="color:#7c1c36;color:#7c1c36;background:#d6aaaa; border-width: 2px;border-style: solid; border-color:#ffffff; border-radius: px;">
+							<div class="ifb-flip-box-section "><div class="ifb-flip-box-section-content ult-responsive"  data-ultimate-target='#flip-box-wrap-8315 .ifb-flip-box-section-content.ult-responsive'  data-responsive-json-new='{"font-size":"","line-height":""}'  style="color:#333333;color:#7c1c36;color:#7c1c36;"><p>Email: info_geo@kntu.ac.ir<br />
+Tel.: 021-88877071-2 Ext.:108 </p></div></div></div><!-- END .back --></div> <!-- ifb-flip-box --></div> <!-- flip-box --></div><!-- End icon block --></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_gmaps_widget wpb_content_element" >
+		<div class="wpb_wrapper">
+      <div id="map" style="width: 280px; height: 400px"  align="left"></div>
+	</div>
+</div>
+<script>
+
+	var map = L.map('map').setView([35.7, 51.3], 13);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 20,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright"> ایران</a>'
+}).addTo(map);
+
+var popup = L.popup();
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked at:        (" + e.latlng.lat.toFixed(3) +"  ,  " + e.latlng.lng.toFixed(3)+")")
+        .openOn(map);
+        var latx=e.latlng.lat.toFixed(3);
+        var lngx=e.latlng.lng.toFixed(3);
+        document.getElementById('input_53').value = latx;
+        document.getElementById('input_54').value = lngx;
+        }
+
+map.on('click', onMapClick);
+
+ </script>
+
+
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="thim-widget-tab"><ul class="nav nav-tabs" role="tablist"><li role="presentation" class='active tab-col-2'><a href="#thim-widget-tab-11636360249-1-100"  role="tab" data-toggle="tab"> <input type = "button" class= "myclass" onclick = "newFunction2()" value = "Search by location" > </a></li><li role="presentation" class='tab-col-2'><a href="#thim-widget-tab-21636360249-1-100"  role="tab" data-toggle="tab"><input type = "button" class= "myclass" onclick = "newFunction1()" value = "Search by attribute" ></a></li></ul><div class="tab-content"> <div role="tabpanel" class="tab-pane active" id="thim-widget-tab-11636360249-1-100"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  <script>
+    function newFunction1(){
+      var element = document.getElementById("213023402613438");
+      element.reset()
+    }
+
+ </script>
+  <script>
+    function newFunction2(){
+      
+      var element = document.getElementById("212993096711461");
+      
+      var element2 = document.getElementById("carmodel");
+      element.reset()
+      element2.innerHTML = "";
+    }
+ </script>
+
+<html class="supernova"><head>
+
+<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F213023402613438" title="oEmbed Form">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F213023402613438" title="oEmbed Form">
+
+<link rel="shortcut icon" href="https://cdn.jotfor.ms/assets/img/favicons/favicon-2021.svg">
+<link rel="canonical" href="https://alt.jotfor.ms/213023402613438" />
+
+
+
+
+<title>search by location</title>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://alt.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5eb3b4ae85bd2e1e2966db96"/>
+<link type="text/css" rel="stylesheet" href="https://alt.jotfor.ms/css/styles/payment/payment_styles.css?3.3.28901" />
+<link type="text/css" rel="stylesheet" href="https://alt.jotfor.ms/css/styles/payment/payment_feature.css?3.3.28901" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+
+      /*PREFERENCES STYLE*/
+      /* NEW THEME STYLE */
+      .myclass {
+        background-color: transparent;
+        border-color: transparent;
+      }
+      .supernova {
+        background-color: undefined;
+      }
+      .form-all {
+        margin-top: 72px;
+        background-color: undefined;
+        box-shadow: undefined
+      }
+      .form-line-active {
+        background-color: undefined;
+      }
+      .form-line-error {
+        background-color: undefined;
+      }
+      .form-line-error input:not(#coupon-input):not(.form-validation-error) {
+        border-color: undefined;
+      }
+      .form-label {
+        color: undefined;
+      }
+      .form-sub-label {
+        color: undefined;
+      }
+      .form-dropdown,
+      .form-textarea,
+      .form-textbox,
+      .form-checkbox + label:before, .form-radio + label:before,
+      .form-radio + span:before, .form-checkbox + span:before {
+        border-color: undefined;
+        background-color: undefined;
+        color: undefined;
+      }
+      .rating-item label {
+        border-color: undefined;
+        color: undefined;
+        background-color: undefined;
+      }
+      .rating-item-title.for-to > label:first-child,
+      .rating-item-title.for-from > label:first-child {
+        background-color: transparent;
+        color: undefined;
+      }
+      .appointmentCalendarContainer .monthYearPicker .pickerItem+.pickerItem {
+        border-left-color: undefined;
+      }
+      .appointmentCalendarContainer {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .appointmentCalendarContainer .currentDate,
+      .appointmentCalendarContainer .pickerItem .pickerYear,
+      .appointmentCalendarContainer .pickerItem .pickerMonth
+      {
+        color: undefined;
+      }
+      .appointmentCalendar .calendarDay {
+        color: undefined;
+    }
+      .appointmentCalendarContainer .monthYearPicker{
+        border-color: undefined;
+      }
+      .rating-item input:focus+label, .rating-item input:hover+label {
+        color: undefined;
+      }
+      .appointmentCalendar .calendarDay.isUnavailable,
+      ::placeholder {
+        color: undefined;
+      }
+      .form-spinner-button-container > *,
+      .appointmentDayPickerButton,
+      .form-matrix-column-headers, .form-matrix-row-headers {
+        background-color: undefined;
+      }
+      .appointmentCalendar .dayOfWeek {
+        background-color: undefined;
+        color: undefined;
+      }
+      .form-matrix-values {
+        background-color: undefined;
+      }
+      .rating-item input:focus+label, .rating-item input:hover+label {
+        color: undefined;
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .rating-item input:checked+label {
+        background-color: undefined;
+        border-color:undefined;
+        color: #fff;
+      }
+      .form-checkbox + label, .form-radio + label :not(.rating-item){
+        color: undefined;
+      }
+      .form-dropdown:hover, .form-textarea:hover, .form-textbox:hover, .form-checkbox:hover + label:before, .form-radio:hover + label:before {
+        border-color: undefined;
+        box-shadow: undefined;
+      }
+      .form-dropdown:focus, .form-textarea:focus, .form-textbox:focus, .form-checkbox:focus + label:before, .form-radio:focus + label:before {
+        border-color: undefined;
+        box-shadow: undefined;
+      }
+      .form-matrix-column-headers, .form-matrix-table td, .form-matrix-table td:last-child, .form-matrix-table th, .form-matrix-table th:last-child, .form-matrix-table tr:last-child td, .form-matrix-table tr:last-child th, .form-matrix-table tr:not([role=group])+tr[role=group] th,
+      .form-matrix-column-headers, .form-matrix-table td,
+      .form-matrix-table td:last-child, .form-matrix-table th,
+      .form-matrix-table th:last-child, .form-matrix-table tr:last-child td,
+      .form-matrix-table tr:last-child th,
+      .form-matrix-table tr:not([role=group])+tr[role=group] th
+      {
+        border-color: undefined;
+        color: undefined;
+      }
+      .form-matrix-headers.form-matrix-column-headers,
+      .isSelected .form-matrix-column-headers:nth-last-of-type(2) {
+        border-color: undefined;
+      }
+      .form-radio:checked + label:after {
+        background-color: undefined;
+      }
+      .form-checkbox:checked + label:before {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .form-radio:checked + label:before {
+        border-color: undefined;
+      }
+      .form-header {
+        color: undefined;
+      }
+      .jSignature, .signature-pad-passive {
+        border-color: undefined;
+      }
+      .form-header-group .form-subHeader {
+        color: undefined;
+      }
+      .form-header-group {
+        border-color: undefined;
+      }
+      .header-large {
+        color: undefined;
+        border-color: undefined;
+      }
+      li[data-type="control_text"] .form-html {
+        color: undefined;
+      }
+      li[data-type="control_datetime"] .extended .allowTime-container + .form-sub-label-container {
+        background-color: undefined;
+      }
+      .submit-button {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .form-sacl-button, form-submit-print {
+        color: undefined;
+      }
+      .form-pagebreak-back {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .form-pagebreak-next {
+        background-color: undefined;
+      }
+      .form-pagebreak, .form-pagebreak > div {
+        border-color: undefined;
+      }
+      .form-buttons-wrapper, .form-pagebreak, .form-submit-clear-wrapper {
+        border-color: undefined;
+      }
+
+      /* NEW THEME STYLE */
+      /*PREFERENCES STYLE*/
+      /*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Inter, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Inter, sans-serif;
+    }
+    .form-header-group {
+      font-family: Inter, sans-serif;
+    }
+    .form-label {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px 36px 12px 36px px;
+      margin-bottom: 12px 36px 12px 36px px;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 16px
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 16px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #fff;
+      border: 1px solid transparent;
+    }
+  .form-all {
+    color: #cfd7cb;
+  }
+  .form-label-top,
+  .form-label-left,
+  .form-label-right,
+  .form-html,
+  .form-checkbox-item label,
+  .form-radio-item label {
+    color: cfd7cb;
+  }
+  
+    .supernova {
+      background-color: #cfd7cb; 
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+      .supernova {
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+      .supernova {
+        background-image: url("//www.jotform.com/images/brushed.png");
+      }
+      #stage {
+        background-image: url("//www.jotform.com/images/brushed.png");
+      }
+    
+      .form-all {
+        background-image: url("//www.jotform.com/images/brushed.png");
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+    
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<script src="https://alt.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://alt.jotfor.ms/static/jotform.forms.js?3.3.28901" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_53').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_54').setAttribute('tabindex',0);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"searchOptions","qid":"1","text":"Search options","type":"control_head"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"submit","qid":"19","text":"Clear Fields","type":"control_button"},{"name":"search","qid":"20","text":"Search","type":"control_button"},null,null,null,{"description":"","name":"dataCollection","qid":"24","text":"Data collection time ","type":"control_birthdate"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"thelatitude","qid":"53","subLabel":"example: 31.987","text":"The \"latitude\" ( Lat., φ, or phi) ","type":"control_textbox"},{"description":"","name":"thelongitude","qid":"54","subLabel":"example: 55.276","text":"The \"longitude\" (Long., λ, or lambda) ","type":"control_textbox"},null,null,{"name":"divider","qid":"57","type":"control_divider"},{"name":"searchResults","qid":"58","text":"Search results...","type":"control_head"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"searchOptions","qid":"1","text":"Search options","type":"control_head"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"submit","qid":"19","text":"Clear Fields","type":"control_button"},{"name":"search","qid":"20","text":"Search","type":"control_button"},null,null,null,{"description":"","name":"dataCollection","qid":"24","text":"Data collection time ","type":"control_birthdate"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"thelatitude","qid":"53","subLabel":"example: 31.987","text":"The \"latitude\" ( Lat., φ, or phi) ","type":"control_textbox"},{"description":"","name":"thelongitude","qid":"54","subLabel":"example: 55.276","text":"The \"longitude\" (Long., λ, or lambda) ","type":"control_textbox"},null,null,{"name":"divider","qid":"57","type":"control_divider"},{"name":"searchResults","qid":"58","text":"Search results...","type":"control_head"}]);}, 20); 
+</script>
+</head>
+<body>
+<form class="jotform-form" action="http://localhost:5000/result" method="post" name="form_213023402613438" id="213023402613438" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="213023402613438" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <style>
+      .form-all:before { background: none;}
+    </style>
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Search options
+            </h1>
+            <div id="subHeader_1" class="form-subHeader">
+              Fill out the form carefully to get data
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_53">
+        <label class="form-label form-label-top form-label-auto" id="label_53" for="input_53"> The &quot;latitude&quot; ( Lat., φ, or phi) </label>
+        <div id="cid_53" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="text" id="input_53" name="The Latitude" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_53 sublabel_input_53" />
+            <label class="form-sub-label" for="input_53" id="sublabel_input_53" style="min-height:13px" aria-hidden="false"> example: 31.987 </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_54">
+        <label class="form-label form-label-top form-label-auto" id="label_54" for="input_54"> The &quot;longitude&quot; (Long., λ, or lambda) </label>
+        <div id="cid_54" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="text" id="input_54" name="The Longitude" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_54 sublabel_input_54" />
+            <label class="form-sub-label" for="input_54" id="sublabel_input_54" style="min-height:13px" aria-hidden="false"> example: 55.276 </label>
+            <input type="button" onclick="zoomTo()" value="Mark it!"/>
+          </span>
+        </div>
+      </li>
+     
+<script>
+function zoomTo() {
+  var lat = document.getElementById("input_53").value;
+  var lng = document.getElementById("input_54").value;
+  map.setView([lat, lng], 10);
+   var marker = L.marker([lat, lng]).addTo(map);
+}
+</script>
+      
+
+          <li class="form-line form-line-column form-col-1" data-type="control_birthdate" id="id_24">
+        <label class="form-label form-label-top" id="label_24" for="input_24"> Data collection time </label>
+        <div id="cid_24" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <select name="Data collection solardate1" id="input_24_solardate1" class="form-dropdown" data-component="birthdate-month" aria-labelledby="label_24 sublabel_24_month">
+                <option>  </option>
+                <option value="1405"> 1405 </option>
+                <option value="1404"> 1404 </option>
+                <option value="1403"> 1403 </option>
+                <option value="1402"> 1402 </option>
+                <option value="1401"> 1401 </option>
+                <option value="1400"> 1400 </option>
+                <option value="1399"> 1399 </option>
+                <option value="1398"> 1398 </option>
+                <option value="1397"> 1397 </option>
+                <option value="1396"> 1396 </option>
+                <option value="1395"> 1395 </option>
+                <option value="1394"> 1394 </option>
+                <option value="1393"> 1393 </option>
+                <option value="1392"> 1392 </option>
+                <option value="1391"> 1391 </option>
+                <option value="1390"> 1390 </option>
+                <option value="1389"> 1389 </option>
+                <option value="1388"> 1388 </option>
+                <option value="1387"> 1387 </option>
+                <option value="1386"> 1386 </option>
+                <option value="1385"> 1385 </option>
+                <option value="1384"> 1384 </option>
+                <option value="1383"> 1383 </option>
+                <option value="1382"> 1382 </option>
+                <option value="1381"> 1381 </option>
+                <option value="1380"> 1380 </option>
+                <option value="1379"> 1379 </option>
+                <option value="1378"> 1378 </option>
+                <option value="1377"> 1377 </option>
+                <option value="1376"> 1376 </option>
+                <option value="1375"> 1375 </option>
+                <option value="1374"> 1373 </option>
+                <option value="1372"> 1372 </option>
+                <option value="1371"> 1371 </option>
+                <option value="1370"> 1370 </option>
+                <option value="1369"> 1369 </option>
+                <option value="1368"> 1368 </option>
+                <option value="1367"> 1367 </option>
+                <option value="1366"> 1366 </option>
+                <option value="1365"> 1365 </option>
+                <option value="1364"> 1364 </option>
+                <option value="1363"> 1363 </option>
+                <option value="1362"> 1362 </option>
+                <option value="1361"> 1361 </option>
+                <option value="1360"> 1360 </option>
+                <option value="1359"> 1359 </option>
+                <option value="1358"> 1358 </option>
+                <option value="1357"> 1357 </option>
+                <option value="1356"> 1356 </option>
+                <option value="1355"> 1355 </option>
+                <option value="1354"> 1354 </option>
+                <option value="1353"> 1353 </option>
+                <option value="1352"> 1352 </option>
+                <option value="1351"> 1351 </option>
+                <option value="1350"> 1350 </option>
+                <option value="1349"> 1349 </option>
+                <option value="1348"> 1348 </option>
+                <option value="1347"> 1347 </option>
+                <option value="1346"> 1346 </option>
+                <option value="1345"> 1345 </option>
+                <option value="1344"> 1344 </option>
+                <option value="1343"> 1343 </option>
+                <option value="1342"> 1342 </option>
+                <option value="1341"> 1341 </option>
+                <option value="1340"> 1340 </option>
+                <option value="1339"> 1339 </option>
+                <option value="1338"> 1338 </option>
+                <option value="1337"> 1337 </option>
+                <option value="1336"> 1336 </option>
+                <option value="1335"> 1335 </option>
+                <option value="1334"> 1334 </option>
+                <option value="1333"> 1333 </option>
+                <option value="1332"> 1332 </option>
+                <option value="1331"> 1331 </option>
+                <option value="1330"> 1330 </option>
+                <option value="1329"> 1329 </option>
+                <option value="1328"> 1328 </option>
+                <option value="1327"> 1327 </option>
+                <option value="1326"> 1326 </option>
+                <option value="1325"> 1325 </option>
+                <option value="1324"> 1324 </option>
+                <option value="1323"> 1323 </option>
+                <option value="1322"> 1322 </option>
+                <option value="1321"> 1321 </option>
+                <option value="1320"> 1320 </option>
+
+
+                
+
+              </select>
+              <label class="form-sub-label" for="input_24_solardate1" id="sublabel_24_month" style="min-height:13px" aria-hidden="false"> سال شمسی </label>
+            </span>
+            
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <select name="Data collection christiandate1" id="input_24_christiandate1" class="form-dropdown" data-component="birthdate-year" aria-labelledby="label_24 sublabel_24_year">
+                <option>  </option>
+                <option value="2026"> 2026 </option>
+                <option value="2025"> 2025 </option>
+                <option value="2024"> 2024 </option>
+                <option value="2023"> 2023 </option>
+                <option value="2022"> 2022 </option>
+                <option value="2021"> 2021 </option>
+                <option value="2020"> 2020 </option>
+                <option value="2019"> 2019 </option>
+                <option value="2018"> 2018 </option>
+                <option value="2017"> 2017 </option>
+                <option value="2016"> 2016 </option>
+                <option value="2015"> 2015 </option>
+                <option value="2014"> 2014 </option>
+                <option value="2013"> 2013 </option>
+                <option value="2012"> 2012 </option>
+                <option value="2011"> 2011 </option>
+                <option value="2010"> 2010 </option>
+                <option value="2009"> 2009 </option>
+                <option value="2008"> 2008 </option>
+                <option value="2007"> 2007 </option>
+                <option value="2006"> 2006 </option>
+                <option value="2005"> 2005 </option>
+                <option value="2004"> 2004 </option>
+                <option value="2003"> 2003 </option>
+                <option value="2002"> 2002 </option>
+                <option value="2001"> 2001 </option>
+                <option value="2000"> 2000 </option>
+                <option value="1999"> 1999 </option>
+                <option value="1998"> 1998 </option>
+                <option value="1997"> 1997 </option>
+                <option value="1996"> 1996 </option>
+                <option value="1995"> 1995 </option>
+                <option value="1994"> 1994 </option>
+                <option value="1993"> 1993 </option>
+                <option value="1992"> 1992 </option>
+                <option value="1991"> 1991 </option>
+                <option value="1990"> 1990 </option>
+                <option value="1989"> 1989 </option>
+                <option value="1988"> 1988 </option>
+                <option value="1987"> 1987 </option>
+                <option value="1986"> 1986 </option>
+                <option value="1985"> 1985 </option>
+                <option value="1984"> 1984 </option>
+                <option value="1983"> 1983 </option>
+                <option value="1982"> 1982 </option>
+                <option value="1981"> 1981 </option>
+                <option value="1980"> 1980 </option>
+                <option value="1979"> 1979 </option>
+                <option value="1978"> 1978 </option>
+                <option value="1977"> 1977 </option>
+                <option value="1976"> 1976 </option>
+                <option value="1975"> 1975 </option>
+                <option value="1974"> 1974 </option>
+                <option value="1973"> 1973 </option>
+                <option value="1972"> 1972 </option>
+                <option value="1971"> 1971 </option>
+                <option value="1970"> 1970 </option>
+                <option value="1969"> 1969 </option>
+                <option value="1968"> 1968 </option>
+                <option value="1967"> 1967 </option>
+                <option value="1966"> 1966 </option>
+                <option value="1965"> 1965 </option>
+                <option value="1964"> 1964 </option>
+                <option value="1963"> 1963 </option>
+                <option value="1962"> 1962 </option>
+                <option value="1961"> 1961 </option>
+                <option value="1960"> 1960 </option>
+                <option value="1959"> 1959 </option>
+                <option value="1958"> 1958 </option>
+                <option value="1957"> 1957 </option>
+                <option value="1956"> 1956 </option>
+                <option value="1955"> 1955 </option>
+                <option value="1954"> 1954 </option>
+                <option value="1953"> 1953 </option>
+                <option value="1952"> 1952 </option>
+                <option value="1951"> 1951 </option>
+                <option value="1950"> 1950 </option>
+                <option value="1949"> 1949 </option>
+                <option value="1948"> 1948 </option>
+                <option value="1947"> 1947 </option>
+                <option value="1946"> 1946 </option>
+                <option value="1945"> 1945 </option>
+                <option value="1944"> 1944 </option>
+                <option value="1943"> 1943 </option>
+                <option value="1942"> 1942 </option>
+                <option value="1941"> 1941 </option>
+                <option value="1940"> 1940 </option>
+                <option value="1939"> 1939 </option>
+                <option value="1938"> 1938 </option>
+                <option value="1937"> 1937 </option>
+                <option value="1936"> 1936 </option>
+                <option value="1935"> 1935 </option>
+                <option value="1934"> 1934 </option>
+                <option value="1933"> 1933 </option>
+                <option value="1932"> 1932 </option>
+                <option value="1931"> 1931 </option>
+                <option value="1930"> 1930 </option>
+                <option value="1929"> 1929 </option>
+                <option value="1928"> 1928 </option>
+                <option value="1927"> 1927 </option>
+                <option value="1926"> 1926 </option>
+                <option value="1925"> 1925 </option>
+                <option value="1924"> 1924 </option>
+                <option value="1923"> 1923 </option>
+                <option value="1922"> 1922 </option>
+                <option value="1921"> 1921 </option>
+                <option value="1920"> 1920 </option>
+              </select>
+              <label class="form-sub-label" for="input_24_christiandate1" id="sublabel_24_year" style="min-height:13px" aria-hidden="false"> سال میلادی </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_57">
+        <div id="cid_57" class="form-input-wide" data-layout="full">
+          <!-- <div aria-label="Divider" data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+          </div> -->
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_19">
+        <div id="cid_19" class="form-input-wide" data-layout="full">
+          <div data-align="right" class="form-buttons-wrapper form-buttons-right   jsTest-button-wrapperField">
+            <button type="reset" data-component="button" data-content="">
+              Clear Fields
+            </button>
+            </div>
+            </div>
+      </li>
+      <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_20">
+        <div id="cid_20" class="form-input-wide" data-layout="full">
+          <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+            <button type="submit" data-component="button" data-content="">
+              Search
+            </button>
+          </div>
+        </div>
+      </li>
+      <!-- <li id="cid_58" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_58" class="form-header" data-component="header">
+              Search results...
+            </h2>
+          </div>
+        </div>
+      </li> -->
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by Jotform";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="213023402613438" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='213023402613438'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "213023402613438-213023402613438";
+}
+  </script>
+ 
+</form></body>
+</html>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.28901"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.28901"></script>
+<script type="text/javascript">window.GOOGLE_SIGNON = "172124630376-qk1qmdfmur2ojaf39e070iqhpt2foaip.apps.googleusercontent.com"</script>
+<script type="text/javascript">window.FACEBOOK_SIGNON_APP_ID = "1140740696088074"</script>
+<script>window.JotFormAPIEndpoint = "https://api.jotform.com"; </script>
+<script>window.JFForm = { id: '213023402613438', skippable: true, isHipaa: '' };</script> 
+<script defer src="https://cdn.jotfor.ms//common/FormUserScripts.js"></script></div> <div role="tabpanel" class="tab-pane" id="thim-widget-tab-21636360249-1-100"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html class="supernova"><head>
+<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&url=https%3A%2F%2Fform.jotform.com%2F212993096711461" title="oEmbed Form">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&url=https%3A%2F%2Fform.jotform.com%2F212993096711461" title="oEmbed Form">
+<link rel="shortcut icon" href="https://cdn.jotfor.ms/assets/img/favicons/favicon-2021.svg">
+<link rel="canonical" href="https://alt.jotfor.ms/212993096711461" />
+<title>search by names</title>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://alt.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5eb3b4ae85bd2e1e2966db96"/>
+<link type="text/css" rel="stylesheet" href="https://alt.jotfor.ms/css/styles/payment/payment_styles.css?3.3.28823" />
+<link type="text/css" rel="stylesheet" href="https://alt.jotfor.ms/css/styles/payment/payment_feature.css?3.3.28823" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+
+      /*PREFERENCES STYLE*/
+      /* NEW THEME STYLE */
+      .supernova {
+        background-color: undefined;
+      }
+      .form-all {
+        margin-top: 72px;
+        background-color: undefined;
+        box-shadow: undefined
+      }
+      .form-line-active {
+        background-color: undefined;
+      }
+      .form-line-error {
+        background-color: undefined;
+      }
+      .form-line-error input:not(#coupon-input):not(.form-validation-error) {
+        border-color: undefined;
+      }
+      .form-label {
+        color: undefined;
+      }
+      .form-sub-label {
+        color: undefined;
+      }
+      .form-dropdown,
+      .form-textarea,
+      .form-textbox,
+      .form-checkbox + label:before, .form-radio + label:before,
+      .form-radio + span:before, .form-checkbox + span:before {
+        border-color: undefined;
+        background-color: undefined;
+        color: undefined;
+      }
+      .rating-item label {
+        border-color: undefined;
+        color: undefined;
+        background-color: undefined;
+      }
+      .rating-item-title.for-to > label:first-child,
+      .rating-item-title.for-from > label:first-child {
+        background-color: transparent;
+        color: undefined;
+      }
+      .appointmentCalendarContainer .monthYearPicker .pickerItem+.pickerItem {
+        border-left-color: undefined;
+      }
+      .appointmentCalendarContainer {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .appointmentCalendarContainer .currentDate,
+      .appointmentCalendarContainer .pickerItem .pickerYear,
+      .appointmentCalendarContainer .pickerItem .pickerMonth
+      {
+        color: undefined;
+      }
+      .appointmentCalendar .calendarDay {
+        color: undefined;
+    }
+      .appointmentCalendarContainer .monthYearPicker{
+        border-color: undefined;
+      }
+      .rating-item input:focus+label, .rating-item input:hover+label {
+        color: undefined;
+      }
+      .appointmentCalendar .calendarDay.isUnavailable,
+      ::placeholder {
+        color: undefined;
+      }
+      .form-spinner-button-container > *,
+      .appointmentDayPickerButton,
+      .form-matrix-column-headers, .form-matrix-row-headers {
+        background-color: undefined;
+      }
+      .appointmentCalendar .dayOfWeek {
+        background-color: undefined;
+        color: undefined;
+      }
+      .form-matrix-values {
+        background-color: undefined;
+      }
+      .rating-item input:focus+label, .rating-item input:hover+label {
+        color: undefined;
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .rating-item input:checked+label {
+        background-color: undefined;
+        border-color:undefined;
+        color: #fff;
+      }
+      .form-checkbox + label, .form-radio + label :not(.rating-item){
+        color: undefined;
+      }
+      .form-dropdown:hover, .form-textarea:hover, .form-textbox:hover, .form-checkbox:hover + label:before, .form-radio:hover + label:before {
+        border-color: undefined;
+        box-shadow: undefined;
+      }
+      .form-dropdown:focus, .form-textarea:focus, .form-textbox:focus, .form-checkbox:focus + label:before, .form-radio:focus + label:before {
+        border-color: undefined;
+        box-shadow: undefined;
+      }
+      .form-matrix-column-headers, .form-matrix-table td, .form-matrix-table td:last-child, .form-matrix-table th, .form-matrix-table th:last-child, .form-matrix-table tr:last-child td, .form-matrix-table tr:last-child th, .form-matrix-table tr:not([role=group])+tr[role=group] th,
+      .form-matrix-column-headers, .form-matrix-table td,
+      .form-matrix-table td:last-child, .form-matrix-table th,
+      .form-matrix-table th:last-child, .form-matrix-table tr:last-child td,
+      .form-matrix-table tr:last-child th,
+      .form-matrix-table tr:not([role=group])+tr[role=group] th
+      {
+        border-color: undefined;
+        color: undefined;
+      }
+      .form-matrix-headers.form-matrix-column-headers,
+      .isSelected .form-matrix-column-headers:nth-last-of-type(2) {
+        border-color: undefined;
+      }
+      .form-radio:checked + label:after {
+        background-color: undefined;
+      }
+      .form-checkbox:checked + label:before {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .form-radio:checked + label:before {
+        border-color: undefined;
+      }
+      .form-header {
+        color: undefined;
+      }
+      .jSignature, .signature-pad-passive {
+        border-color: undefined;
+      }
+      .form-header-group .form-subHeader {
+        color: undefined;
+      }
+      .form-header-group {
+        border-color: undefined;
+      }
+      .header-large {
+        color: undefined;
+        border-color: undefined;
+      }
+      li[data-type="control_text"] .form-html {
+        color: undefined;
+      }
+      li[data-type="control_datetime"] .extended .allowTime-container + .form-sub-label-container {
+        background-color: undefined;
+      }
+      .submit-button {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .form-sacl-button, form-submit-print {
+        color: undefined;
+      }
+      .form-pagebreak-back {
+        background-color: undefined;
+        border-color: undefined;
+      }
+      .form-pagebreak-next {
+        background-color: undefined;
+      }
+      .form-pagebreak, .form-pagebreak > div {
+        border-color: undefined;
+      }
+      .form-buttons-wrapper, .form-pagebreak, .form-submit-clear-wrapper {
+        border-color: undefined;
+      }
+
+      /* NEW THEME STYLE */
+      /*PREFERENCES STYLE*/
+      /*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Inter, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Inter, sans-serif;
+    }
+    .form-header-group {
+      font-family: Inter, sans-serif;
+    }
+    .form-label {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px 36px 12px 36px px;
+      margin-bottom: 12px 36px 12px 36px px;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 16px
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 16px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #fff;
+      border: 1px solid transparent;
+    }
+  .form-all {
+    color: #193a09;
+  }
+  .form-label-top,
+  .form-label-left,
+  .form-label-right,
+  .form-html,
+  .form-checkbox-item label,
+  .form-radio-item label {
+    color: #193a09;
+  }
+  
+    .supernova {
+      background-color: #193a09;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+      .supernova {
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+      .supernova {
+        background-image: url("//www.jotform.com/images/brushed.png");
+      }
+      #stage {
+        background-image: url("//www.jotform.com/images/brushed.png");
+      }
+    
+      .form-all {
+        background-image: url("//www.jotform.com/images/brushed.png");
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+    
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<script src="https://alt.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://alt.jotfor.ms/static/jotform.forms.js?3.3.28823" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_53').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_54').setAttribute('tabindex',0);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"searchOptions","qid":"1","text":"Search options","type":"control_head"},null,{"name":"province","qid":"3","subLabel":"","text":"Province","type":"control_dropdown"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"submit","qid":"19","text":"Clear Fields","type":"control_button"},{"name":"search","qid":"20","text":"Search","type":"control_button"},null,null,null,{"description":"","name":"dataCollection","qid":"24","text":"Data collection time ","type":"control_birthdate"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"dataType","qid":"46","subLabel":"","text":"Data type","type":"control_dropdown"},null,null,{"description":"","name":"cities","qid":"49","subLabel":"","text":"Cities","type":"control_dropdown"},null,null,null,{"description":"","name":"keywordsOn53","qid":"53","subLabel":"example: "تهران" ","text":"Keywords on Location of data","type":"control_textbox"},{"description":"","name":"keywordsOn","qid":"54","subLabel":"example: "بارش"","text":"Keywords on content of data","type":"control_textbox"},{"name":"searchResults","qid":"55","text":"Search results...","type":"control_head"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"searchOptions","qid":"1","text":"Search options","type":"control_head"},null,{"name":"province","qid":"3","subLabel":"","text":"Province","type":"control_dropdown"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"submit","qid":"19","text":"Clear Fields","type":"control_button"},{"name":"search","qid":"20","text":"Search","type":"control_button"},null,null,null,{"description":"","name":"dataCollection","qid":"24","text":"Data collection time ","type":"control_birthdate"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"dataType","qid":"46","subLabel":"","text":"Data type","type":"control_dropdown"},null,null,{"description":"","name":"cities","qid":"49","subLabel":"","text":"Cities","type":"control_dropdown"},null,null,null,{"description":"","name":"keywordsOn53","qid":"53","subLabel":"example: "تهران" ","text":"Keywords on Location of data","type":"control_textbox"},{"description":"","name":"keywordsOn","qid":"54","subLabel":"example: "بارش"","text":"Keywords on content of data","type":"control_textbox"},{"name":"searchResults","qid":"55","text":"Search results...","type":"control_head"}]);}, 20); 
+</script>
+</head>
+<body onload="ChangeCarList()">
+<form class="jotform-form" action="http://localhost:5000/result" method="post" name="form_212993096711461" id="212993096711461" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="212993096711461" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <style>
+      .form-all:before { background: none;}
+    </style>
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Search options
+            </h1>
+            <div id="subHeader_1" class="form-subHeader">
+              Fill out the form carefully to get data
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_46">
+        <label class="form-label form-label-top form-label-auto" id="label_46" for="input_46"> Data type </label>
+        <div id="cid_46" class="form-input-wide" data-layout="half">
+          <select class="form-dropdown" id="input_46" name="Data type" style="width:310px" data-component="dropdown">
+            <option value=""> Please Select </option>
+            <option value="Vector"> Vector</option>
+            <option value="Raster"> Raster </option>
+            <option value="Image"> Image </option>
+            <option value="Attribute"> Attribute </option>
+            <option value="Combination"> Combination </option>
+          </select>
+        </div>
+      </li>
+      
+      <li class="form-line form-line-column form-col-1" data-type="control_dropdown" id="id_3">
+        <label class="form-label form-label-top" id="label_3" for="input_3"> Province </label>
+        <div id="cid_3" class="form-input-wide" data-layout="half">
+          <select class="form-dropdown" id="province" name="province2" style="width:310px" data-component="dropdown" onchange="ChangeCarList()" onload="ChangeCarList()">
+            
+            <option value="ggg" selected> نام استان را وارد کنید </option>
+            <option value="1">آذربایجان شرقی</option> 
+            <option value="2">آذربایجان غربی</option> 
+            <option value="3">اردبیل</option>
+            <option value="4">اصفهان</option>
+            <option value="5">البرز</option>
+            <option value="6">ایلام</option>
+            <option value="7">بوشهر</option>
+            <option value="8">تهران</option>
+            <option value="9">چهارمحال و بختیاری</option>
+            <option value="10">خراسان جنوبی</option>
+            <option value="11">خراسان رضوی</option>
+            <option value="12">خراسان شمالی</option>
+            <option value="13">خوزستان</option>
+            <option value="14">زنجان</option>
+            <option value="15">سمنان</option>
+            <option value="16">سیستان و بلوچستان</option>
+            <option value="17">فارس</option>
+            <option value="18">قزوین</option>
+            <option value="19">قم</option>
+            <option value="20">کردستان</option>
+            <option value="21">کرمان</option>
+            <option value="22">کرمانشاه</option>
+            <option value="23">کهگیلویه و بویراحمد</option>
+            <option value="24">گلستان</option>
+            <option value="25">گیلان</option>
+            <option value="26">لرستان</option>
+            <option value="27">مازندران</option>
+            <option value="28">مرکزی</option>
+            <option value="29">هرمزگان</option>
+            <option value="30">همدان</option>
+            <option value="31">یزد</option>
+                                        
+           </select>
+          </div>
+        </li>
+              <li class="form-line form-line-column form-col-2" data-type="control_dropdown" id="id_49">
+                <label class="form-label form-label-top" id="label_49" for="input_49"> City </label>
+                <div id="cid_49" class="form-input-wide" data-layout="half">
+                  <select class="form-dropdown" id="carmodel" name= "city" style="width:310px" data-component="dropdown"></select>
+        <script>
+            var carsAndModels = {};
+    
+    carsAndModels['ggg'] = ['--- '];
+    carsAndModels['1'] = ['   ','تبریز',' آذرشهر', 'اسکو', 'اهر', 'بستان‌آباد', 'بناب', 'جلفا', 'چاراویماق', ' داآفرین', 'سراب', 'شبستر', 'عجب‌شیر', 'کلیبر', 'مراغه', 'مرند', 'ملکان', 'میانه', 'ورزقان','هریس',' هشترود',' هوراند'];
+    carsAndModels['2'] = ['   ',' ارومیه ', ' اشنویه ', ' بوکان ', ' پلدشت ', ' پیرانشهر ', ' تکاب ', ' چالدران ', ' چایپاره ', ' خوی ', ' سردشت ', ' سلماس ', ' شاهین‌دژ ', ' شوط ', ' ماکو ', ' مهاباد ', ' میاندوآب ', ' نقده'];
+    carsAndModels['3'] = ['   ',' اردبیل ', ' بیله‌سوار ', ' پارس‌آباد ', ' خلخال ', ' سرعین ', ' کوثر ', ' گرمی ', ' مشگین‌شهر ', ' نمین ', ' نیر'];
+    carsAndModels['4'] = ['   ',' آران و بیدگل ', ' اردستان ', ' اصفهان ', ' برخوار ', ' بوئین و میاندشت ', ' تیران و کرون ', ' چادگان ', ' خمینی‌شهر ', ' خوانسار ', ' خور و بیابانک ', ' سمیرم ', ' شاهین‌شهر و میمه ', ' شهرضا ', ' دهاقان ', ' فریدن ', ' فریدون‌شهر ', ' فلاورجان ', ' کاشان ', ' گلپایگان ', ' لنجان ', ' مبارکه ', ' نایین ', ' نجف‌آباد ', ' نطنز'];
+    carsAndModels['5'] = ['   ',' اشتهارد ', ' ساوجبلاغ ', ' طالقان ', ' کرج ', ' نظرآباد ', ' فردیس','هشتگرد'];
+    carsAndModels['6'] = ['   ',' آبدانان ', ' ایلام ', ' ایوان ', ' بدره ', ' دره‌شهر ', ' دهلران ', ' سیروان ', ' شیروان و چرداول ', ' ملکشاهی ', ' مهران'];
+    carsAndModels['7'] = ['   ',' بوشهر ', ' تنگستان ', ' جم ', ' دشتستان ', ' دشتی ', ' دَیِّر ', ' دَیلَم ', ' عسلویه ', ' کَنگان ', ' گِناوه'];
+    carsAndModels['8'] = ['   ',' اسلامشهر ', ' بهارستان ', ' پاکدشت ', ' پردیس ', ' پیشوا ', ' تهران ', ' دماوند ', ' رباطکریم ', ' ری ', ' شمیرانات ', ' شهریار ', ' فیروزکوه ', ' قدس ', ' قرچک ', ' ملارد ', ' ورامین'];
+    carsAndModels['9'] = ['   ',' اردل ', ' بروجن ', ' بن ', ' سامان ', ' شهرکرد ', ' فارسان ', ' کوهرنگ ', ' کیار ', ' لردگان'];
+    carsAndModels['10'] = ['   ',' بشرویه ', ' بیرجند ', ' خوسف ', ' درمیان ', ' زیرکوه ', ' سرایان ', ' سربیشه ', ' طبس ', ' فردوس ', ' قائنات ', ' نهبندان'];
+    carsAndModels['11'] = ['   ',' باخرز ', ' بردسکن ', ' بجستان ', ' تایباد ', ' تربت جام ', ' تربت حیدریه ', ' چناران ', ' جغتای ', ' جوین ', ' خلیل‌آباد ', ' خواف ', ' خوشاب ', ' داورزن ', ' درگز ', ' رشتخوار ', ' زاوه ', ' سبزوار ', ' سرخس ', ' فریمان ', ' فیروزه ', ' قوچان ', ' طرقبه شاندیز ', ' کاشمر ', ' کلات ', ' گناباد ', ' مشهد ', ' مه‌ولات ', ' نیشابور'];
+    carsAndModels['12'] = ['   ',' اسفراین ', ' بجنورد ', ' جاجرم ', ' شیروان ', ' فاروج ', ' گرمه ', ' مانه و سملقان ', ' راز و جرگلان'];
+    carsAndModels['13'] = ['   ',' آبادان ', ' آغاجاری ', ' امیدیه ', ' اندیکا ', ' اندیمشک ', ' اهواز ', ' ایذه ', ' باغ‌ملک ', ' باوی ', ' بهبهان ', ' حمیدیه ', ' خرمشهر ', ' دزفول ', ' دشت آزادگان ', ' رامشیر ', ' رامهرمز ', ' شادگان ', ' شوش ', ' شوشتر ', ' کارون ', ' گتوند ', ' لالی ', ' ماهشهر ', ' مسجدسلیمان ', ' هفتکل ', ' هندیجان ', ' هویزه'];
+    carsAndModels['14'] = ['   ',' ابهر ', ' ایجرود ', ' خدابنده ', ' خرمدره ', ' زنجان ', ' سلطانیه ', ' طارم ', ' ماهنشان'];
+    carsAndModels['15'] = ['   ',' آرادان ', ' دامغان ', ' سرخه ', ' سمنان ', ' شاهرود ', ' گرمسار ', ' مهدی‌شهر ', ' میامی'];
+    carsAndModels['16'] = ['   ',' ایرانشهر ', ' چابهار ', ' خاش ', ' دلگان ', ' زابل ', ' زاهدان ', ' میرجاوه ', ' زهک ', ' سراوان ', ' سرباز ', ' سیب و سوران ', ' قصرقند ', ' کنارک ', ' مهرستان ', ' نیک‌شهر ', ' نیمروز ', ' هامون ', ' هیرمند'];
+    carsAndModels['17'] = ['   ',' آباده ', ' اقلید', 'اوز ', ' ارسنجان ', ' استهبان ', ' بوانات ', ' پاسارگاد ', ' جهرم ', ' خرامه ', ' خرم‌بید ', ' خنج ', ' داراب ', ' رستم ', ' زرین‌دشت ', ' سپیدان ', ' سروستان ', ' شیراز ', ' فراشبند ', ' فسا ', ' فیروزآباد ', ' قیر و کارزین ', ' کازرون ', ' کوار ', ' گراش ', ' لارستان', ' لامرد ', ' مرودشت ', ' ممسنی ', ' مهر ', ' نی‌ریز'];
+    carsAndModels['18'] = ['   ',' آوج ', ' آبیک ', ' قزوین ', ' بوئین‌زهرا ', ' تاکستان'];
+    carsAndModels['19'] = ['   ','جعفریه ','دستجرد ','سلفچگان',' قم','قنوات','کهک'];
+    carsAndModels['20'] = ['   ',' بانه ', ' بیجار ', ' دهگلان ', ' دیواندره ', ' سروآباد ', ' سقز ', ' سنندج ', ' قروه ', ' کامیاران ', ' مریوان'];
+    carsAndModels['21'] = ['   ','ارزوئیه' , 'انار ', 'بافت ', 'بردسیر ', 'بم ', 'جیرفت ', 'رابر ', 'راور ', 'رفسنجان ', 'رودبار جنوب ', 'ریگان ', 'زرند ', 'سیرجان ', 'شهر بابک ', 'عنبرآباد ', 'فاریاب ', 'فهرج ', 'قلعه‌گنج ', 'کرمان ', 'کوهبنان ', 'کهنوج ', 'منوجان ', 'نرماشیر'];
+    carsAndModels['22'] = ['   ',' اسلام‌آباد غرب ', ' پاوه ', ' ثلاث باباجانی ', ' جوانرود ', ' دالاهو ', ' روانسر ', ' سرپل ذهاب ', ' سنقر ', ' صحنه ', ' قصر شیرین ', ' کرمانشاه ', ' کنگاور ', ' گیلانغرب ', ' هرسین'];
+    carsAndModels['23'] = ['   ',' باشت ', ' بویراحمد ', ' بهمئی ', ' چرام ', ' دنا ', ' کهگیلویه ', ' گچساران ', ' لنده'];
+    carsAndModels['24'] = ['   ',' آزادشهر ', ' آق‌قلا ', ' گز ', ' ترکمن ', ' رامیان ', ' علی‌آباد ', ' کردکوی ', ' کلاله ', ' گالیکش ', ' گرگان ', ' گنبد کاووس ', ' گمیشان ', ' مراوه‌تپه ', ' مینودشت'];
+    carsAndModels['25'] = ['   ',' فومن ', ' آستارا ', ' آستانه اشرفیه ', ' املش ', ' انزلی ', ' تالش ', ' رشت ', ' رضوانشهر ', ' رودبار ', ' رودسر ', ' سیاهکل ', ' شفت ', ' صومعه‌سرا ', ' لاهیجان ', ' لنگرود ', ' ماسال'];
+    carsAndModels['26'] = ['   ',' ازنا ', ' الیگودرز ', ' بروجرد ', ' پل‌دختر ', ' خرم‌آباد ', ' دورود ', ' چگنی ', ' دلفان ', ' سلسله ', ' کوهدشت'];
+    carsAndModels['27'] = ['   ',' آمل ', ' بابل ', ' بابلسر ', ' بهشهر ', ' تنکابن ', ' جویبار ', ' چالوس ', ' رامسر ', ' ساری ', ' سوادکوه ', ' سیمرغ ', ' عباس‌آباد ', ' فریدون‌کنار ', ' قائم‌شهر ', ' گلوگاه ', ' محمودآباد ', ' میان‌دورود ', ' نکا ', ' نور ', ' نوشهر ', ' نکا'];
+    carsAndModels['28'] = ['   ',' آشتیان ', ' اراک ', ' تفرش ', ' خمین ', ' خنداب ', ' دلیجان ', ' زرندیه ', ' ساوه ', ' شازند ', ' کمیجان ', ' فراهان ', ' محلات'];
+    carsAndModels['29'] = ['   ',' ابوموسی ', ' بستک ', ' بشاگرد ', ' بندرعباس ', ' لنگه ', ' پارسیان ', ' جاسک ', ' حاجی‌آباد ', ' خمیر ', ' رودان ', ' سیریک ', ' قشم ', ' میناب'];
+    carsAndModels['30'] = ['   ','هرستان',' اسدآباد ', ' بهار ', ' تویسرکان ', ' رزن ', ' فامنین ', ' کبودرآهنگ ', ' ملایر ', ' نهاوند ', ' همدان'];
+    carsAndModels['31'] = ['   ',' ابرکوه ', ' اردکان ', ' اشکذر ', ' بافق ', ' بهاباد ', ' تفت ', ' خاتم ', ' مهریز ', ' میبد ', ' یزد'];
+    
+  
+                
+    function ChangeCarList() {
+        var carList = document.getElementById("province");
+        var modelList = document.getElementById("carmodel");
+        var selCar = carList.options[carList.selectedIndex].value;
+        while (modelList.options.length) {
+            modelList.remove(0);
+        }
+        var cars = carsAndModels[selCar];
+        if (cars) {
+            var i;
+            for (i = 0; i < cars.length; i++) {
+                var car = new Option(cars[i], i);
+                modelList.options.add(car);
+            }
+        }
+    } 
+    </script>
+          
+        </div>
+      </li>
+    
+     
+      <li class="form-line form-line-column form-col-1" data-type="control_birthdate" id="id_24">
+        <label class="form-label form-label-top" id="label_24" for="input_24"> Data collection time </label>
+        <div id="cid_24" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <select name="Data collection solardate2" id="input_24_solardate2" class="form-dropdown" data-component="birthdate-month" aria-labelledby="label_24 sublabel_24_month">
+                <option>  </option>
+                <option value="1405"> 1405 </option>
+                <option value="1404"> 1404 </option>
+                <option value="1403"> 1403 </option>
+                <option value="1402"> 1402 </option>
+                <option value="1401"> 1401 </option>
+                <option value="1400"> 1400 </option>
+                <option value="1399"> 1399 </option>
+                <option value="1398"> 1398 </option>
+                <option value="1397"> 1397 </option>
+                <option value="1396"> 1396 </option>
+                <option value="1395"> 1395 </option>
+                <option value="1394"> 1394 </option>
+                <option value="1393"> 1393 </option>
+                <option value="1392"> 1392 </option>
+                <option value="1391"> 1391 </option>
+                <option value="1390"> 1390 </option>
+                <option value="1389"> 1389 </option>
+                <option value="1388"> 1388 </option>
+                <option value="1387"> 1387 </option>
+                <option value="1386"> 1386 </option>
+                <option value="1385"> 1385 </option>
+                <option value="1384"> 1384 </option>
+                <option value="1383"> 1383 </option>
+                <option value="1382"> 1382 </option>
+                <option value="1381"> 1381 </option>
+                <option value="1380"> 1380 </option>
+                <option value="1379"> 1379 </option>
+                <option value="1378"> 1378 </option>
+                <option value="1377"> 1377 </option>
+                <option value="1376"> 1376 </option>
+                <option value="1375"> 1375 </option>
+                <option value="1374"> 1373 </option>
+                <option value="1372"> 1372 </option>
+                <option value="1371"> 1371 </option>
+                <option value="1370"> 1370 </option>
+                <option value="1369"> 1369 </option>
+                <option value="1368"> 1368 </option>
+                <option value="1367"> 1367 </option>
+                <option value="1366"> 1366 </option>
+                <option value="1365"> 1365 </option>
+                <option value="1364"> 1364 </option>
+                <option value="1363"> 1363 </option>
+                <option value="1362"> 1362 </option>
+                <option value="1361"> 1361 </option>
+                <option value="1360"> 1360 </option>
+                <option value="1359"> 1359 </option>
+                <option value="1358"> 1358 </option>
+                <option value="1357"> 1357 </option>
+                <option value="1356"> 1356 </option>
+                <option value="1355"> 1355 </option>
+                <option value="1354"> 1354 </option>
+                <option value="1353"> 1353 </option>
+                <option value="1352"> 1352 </option>
+                <option value="1351"> 1351 </option>
+                <option value="1350"> 1350 </option>
+                <option value="1349"> 1349 </option>
+                <option value="1348"> 1348 </option>
+                <option value="1347"> 1347 </option>
+                <option value="1346"> 1346 </option>
+                <option value="1345"> 1345 </option>
+                <option value="1344"> 1344 </option>
+                <option value="1343"> 1343 </option>
+                <option value="1342"> 1342 </option>
+                <option value="1341"> 1341 </option>
+                <option value="1340"> 1340 </option>
+                <option value="1339"> 1339 </option>
+                <option value="1338"> 1338 </option>
+                <option value="1337"> 1337 </option>
+                <option value="1336"> 1336 </option>
+                <option value="1335"> 1335 </option>
+                <option value="1334"> 1334 </option>
+                <option value="1333"> 1333 </option>
+                <option value="1332"> 1332 </option>
+                <option value="1331"> 1331 </option>
+                <option value="1330"> 1330 </option>
+                <option value="1329"> 1329 </option>
+                <option value="1328"> 1328 </option>
+                <option value="1327"> 1327 </option>
+                <option value="1326"> 1326 </option>
+                <option value="1325"> 1325 </option>
+                <option value="1324"> 1324 </option>
+                <option value="1323"> 1323 </option>
+                <option value="1322"> 1322 </option>
+                <option value="1321"> 1321 </option>
+                <option value="1320"> 1320 </option>
+
+
+                
+
+              </select>
+              <label class="form-sub-label" for="input_24_solardate2" id="sublabel_24_month" style="min-height:13px" aria-hidden="false"> سال شمسی </label>
+            </span>
+            
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <select name="Data collection christiandate2" id="input_24_christiandate2" class="form-dropdown" data-component="birthdate-year" aria-labelledby="label_24 sublabel_24_year">
+                <option>  </option>
+                <option value="2026"> 2026 </option>
+                <option value="2025"> 2025 </option>
+                <option value="2024"> 2024 </option>
+                <option value="2023"> 2023 </option>
+                <option value="2022"> 2022 </option>
+                <option value="2021"> 2021 </option>
+                <option value="2020"> 2020 </option>
+                <option value="2019"> 2019 </option>
+                <option value="2018"> 2018 </option>
+                <option value="2017"> 2017 </option>
+                <option value="2016"> 2016 </option>
+                <option value="2015"> 2015 </option>
+                <option value="2014"> 2014 </option>
+                <option value="2013"> 2013 </option>
+                <option value="2012"> 2012 </option>
+                <option value="2011"> 2011 </option>
+                <option value="2010"> 2010 </option>
+                <option value="2009"> 2009 </option>
+                <option value="2008"> 2008 </option>
+                <option value="2007"> 2007 </option>
+                <option value="2006"> 2006 </option>
+                <option value="2005"> 2005 </option>
+                <option value="2004"> 2004 </option>
+                <option value="2003"> 2003 </option>
+                <option value="2002"> 2002 </option>
+                <option value="2001"> 2001 </option>
+                <option value="2000"> 2000 </option>
+                <option value="1999"> 1999 </option>
+                <option value="1998"> 1998 </option>
+                <option value="1997"> 1997 </option>
+                <option value="1996"> 1996 </option>
+                <option value="1995"> 1995 </option>
+                <option value="1994"> 1994 </option>
+                <option value="1993"> 1993 </option>
+                <option value="1992"> 1992 </option>
+                <option value="1991"> 1991 </option>
+                <option value="1990"> 1990 </option>
+                <option value="1989"> 1989 </option>
+                <option value="1988"> 1988 </option>
+                <option value="1987"> 1987 </option>
+                <option value="1986"> 1986 </option>
+                <option value="1985"> 1985 </option>
+                <option value="1984"> 1984 </option>
+                <option value="1983"> 1983 </option>
+                <option value="1982"> 1982 </option>
+                <option value="1981"> 1981 </option>
+                <option value="1980"> 1980 </option>
+                <option value="1979"> 1979 </option>
+                <option value="1978"> 1978 </option>
+                <option value="1977"> 1977 </option>
+                <option value="1976"> 1976 </option>
+                <option value="1975"> 1975 </option>
+                <option value="1974"> 1974 </option>
+                <option value="1973"> 1973 </option>
+                <option value="1972"> 1972 </option>
+                <option value="1971"> 1971 </option>
+                <option value="1970"> 1970 </option>
+                <option value="1969"> 1969 </option>
+                <option value="1968"> 1968 </option>
+                <option value="1967"> 1967 </option>
+                <option value="1966"> 1966 </option>
+                <option value="1965"> 1965 </option>
+                <option value="1964"> 1964 </option>
+                <option value="1963"> 1963 </option>
+                <option value="1962"> 1962 </option>
+                <option value="1961"> 1961 </option>
+                <option value="1960"> 1960 </option>
+                <option value="1959"> 1959 </option>
+                <option value="1958"> 1958 </option>
+                <option value="1957"> 1957 </option>
+                <option value="1956"> 1956 </option>
+                <option value="1955"> 1955 </option>
+                <option value="1954"> 1954 </option>
+                <option value="1953"> 1953 </option>
+                <option value="1952"> 1952 </option>
+                <option value="1951"> 1951 </option>
+                <option value="1950"> 1950 </option>
+                <option value="1949"> 1949 </option>
+                <option value="1948"> 1948 </option>
+                <option value="1947"> 1947 </option>
+                <option value="1946"> 1946 </option>
+                <option value="1945"> 1945 </option>
+                <option value="1944"> 1944 </option>
+                <option value="1943"> 1943 </option>
+                <option value="1942"> 1942 </option>
+                <option value="1941"> 1941 </option>
+                <option value="1940"> 1940 </option>
+                <option value="1939"> 1939 </option>
+                <option value="1938"> 1938 </option>
+                <option value="1937"> 1937 </option>
+                <option value="1936"> 1936 </option>
+                <option value="1935"> 1935 </option>
+                <option value="1934"> 1934 </option>
+                <option value="1933"> 1933 </option>
+                <option value="1932"> 1932 </option>
+                <option value="1931"> 1931 </option>
+                <option value="1930"> 1930 </option>
+                <option value="1929"> 1929 </option>
+                <option value="1928"> 1928 </option>
+                <option value="1927"> 1927 </option>
+                <option value="1926"> 1926 </option>
+                <option value="1925"> 1925 </option>
+                <option value="1924"> 1924 </option>
+                <option value="1923"> 1923 </option>
+                <option value="1922"> 1922 </option>
+                <option value="1921"> 1921 </option>
+                <option value="1920"> 1920 </option>
+              </select>
+              <label class="form-sub-label" for="input_24_christiandate2" id="sublabel_24_year" style="min-height:13px" aria-hidden="false"> سال میلادی </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_53">
+        <label class="form-label form-label-top form-label-auto" id="label_53" for="input_53"> Keywords on Location </label>
+        <div id="cid_53" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="text" id="input_53" name="Keywords on Location" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_53 sublabel_input_53" />
+            <label class="form-sub-label" for="input_53" id="sublabel_input_53" style="min-height:13px" aria-hidden="false"> example: "تهران" </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_54">
+        <label class="form-label form-label-top form-label-auto" id="label_54" for="input_54"> Keywords on data content </label>
+        <div id="cid_54" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+                          <input type="text" id="input_54" name="Keywords on data content" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_54 sublabel_input_54" />
+
+            <label class="form-sub-label" for="input_54" id="sublabel_input_54" style="min-height:13px" aria-hidden="false"> example: "بارش" </label>
+          </span>
+        </div>
+      </li>
+      
+      <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_19"> 
+        <div id="cid_19" class="form-input-wide" data-layout="full">
+          <div data-align="right" class="form-buttons-wrapper form-buttons-right   jsTest-button-wrapperField">
+            <button type="reset" data-component="button" data-content="">
+              Clear Fields
+            </button>
+          </div>
+        </div>
+            </li>
+
+
+      <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_20">
+        <div id="cid_20" class="form-input-wide" data-layout="full">
+          <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+                    <button type="submit" data-component="button" data-content="">
+              Search
+            </button>
+          </div>
+        </div>
+      </li>
+          
+      <li style="clear:both">
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by Jotform";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="212993096711461" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='212993096711461'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "212993096711461-212993096711461";
+}
+  </script>
+
+</form></body>
+</html>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.28823"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.28823"></script>
+<script type="text/javascript">window.GOOGLE_SIGNON = "172124630376-qk1qmdfmur2ojaf39e070iqhpt2foaip.apps.googleusercontent.com"</script>
+<script type="text/javascript">window.FACEBOOK_SIGNON_APP_ID = "1140740696088074"</script>
+<script>window.JotFormAPIEndpoint = "https://api.jotform.com"; </script>
+<script>window.JFForm = { id: '212993096711461', skippable: true, isHipaa: '' };</script> 
+<script defer src="https://cdn.jotfor.ms//common/FormUserScripts.js"></script></div></div></div></div></div></div></div>
+	</div><!-- #main-content -->
+
+
+		<link rel='stylesheet' id='float-menu-pro-fontawesome-css'  href='https://en.kntu.ac.ir/wp-content/plugins/float-menu-pro/asset/fontawesome/css/fontawesome-all.min.css?ver=5.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='float-menu-pro-css'  href='https://en.kntu.ac.ir/wp-content/plugins/float-menu-pro/public/css/style.min.css?ver=2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='float-menu-pro-1-css'  href='https://en.kntu.ac.ir/wp-content/plugins/float-menu-pro/asset/css/style-1.css?ver=1556227538' type='text/css' media='all' />
+<link rel='stylesheet' id='float-menu-pro-2-css'  href='https://en.kntu.ac.ir/wp-content/plugins/float-menu-pro/asset/css/style-2.css?ver=1556227499' type='text/css' media='all' />
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-includes/js/admin-bar.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/en.kntu.ac.ir\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":0};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[href*=#]:not([href=#])","autoSelectorMenuLinks":"true","excludeSelector":"a[href^='#tab-'], a[href^='#tabs-'], a[data-toggle]:not([data-toggle='tooltip']), a[data-slide], a[data-vc-tabs], a[data-vc-accordion]","scrollSpeed":800,"autoScrollSpeed":"true","scrollEasing":"easeInOutQuad","scrollingEasing":"easeOutQuint","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","layout":"vertical","offset":0,"dummyOffset":"false","highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"true","scrollToHashForAll":"true","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","normalizeAnchorPointTargets":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js' defer='defer'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js' defer='defer'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/cf7-conditional-fields/js/scripts.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/flip-box.min.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/js/main.min.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/js/smooth_scroll.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thim_js_translate = {"login":"Username","password":"Password","close":"Close"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/js/custom-script.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/themes/eduma/assets/js/thim-scripts.js'></script>
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js?ver=3.0.22'></script>
+<script type='text/javascript'>
+WebFont.load({google:{families:['Roboto:300,300i,400,400i,500,500i,700,700i', 'Roboto Slab:300,400,700']}});
+</script>
+
+<script type='text/javascript' src='https://en.kntu.ac.ir/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=5.1.11'></script>
+
+
+		</body>
+</html>

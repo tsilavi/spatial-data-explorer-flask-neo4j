@@ -1,0 +1,15 @@
+@font-face{
+  font-family: trial;
+  src: url('myfont.otf');
+  font-weight: bold;}
+  
+  body {background-color: #a5dad554}
+  table {width:100%; border: 1px solid rgba(0, 0, 0, 0.336); border-collapse: collapse;}
+  td {font-family:trial; color: #2215db; border: 1px solid rgba(0, 0, 0, 0.336);, border-collapse: collapse;}
+  h1 {color: #122488cb}
+  th {color: #122488cb; font-size: 20px; background-color:  #37c482; border: 1px solid rgba(0, 0, 0, 0.336); border-collapse: collapse;}
+  tr { height:50px}
+  tr:nth-child(even) { background-color:  #bee4cf;}
+
+
+
